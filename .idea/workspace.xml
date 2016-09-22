@@ -24,20 +24,20 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projects/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="134" column="55" selection-start-line="134" selection-start-column="55" selection-end-line="134" selection-end-column="55" />
+            <state relative-caret-position="2176">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sharenotifier/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="223">
+              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +46,8 @@
       <file leaf-file-name="homepage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sharenotifier/templates/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="248">
+              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -56,10 +56,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sharenotifier/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="136">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
-                <element signature="e#258#264#0#HTML" expanded="true" />
+                <element signature="e#413#419#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +68,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sharenotifier/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
+            <state relative-caret-position="68">
+              <caret line="4" column="127" selection-start-line="4" selection-start-column="127" selection-end-line="4" selection-end-column="127" />
               <folding />
             </state>
           </provider>
@@ -78,8 +78,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sharenotifier/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Projects/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="e#642#683#0" expanded="true" />
               </folding>
@@ -112,12 +112,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sharenotifier/forms.py" />
-        <option value="$PROJECT_DIR$/sharenotifier/templates/index.html" />
-        <option value="$PROJECT_DIR$/Projects/urls.py" />
         <option value="$PROJECT_DIR$/Projects/settings.py" />
+        <option value="$PROJECT_DIR$/sharenotifier/templates/index.html" />
+        <option value="$PROJECT_DIR$/sharenotifier/templates/add_details.html" />
+        <option value="$PROJECT_DIR$/sharenotifier/models.py" />
+        <option value="$PROJECT_DIR$/sharenotifier/forms.py" />
         <option value="$PROJECT_DIR$/sharenotifier/templates/homepage.html" />
+        <option value="$PROJECT_DIR$/sharenotifier/templates/logout.html" />
         <option value="$PROJECT_DIR$/sharenotifier/views.py" />
+        <option value="$PROJECT_DIR$/Projects/urls.py" />
       </list>
     </option>
   </component>
@@ -509,7 +512,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1378" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -581,7 +584,7 @@
         <state relative-caret-position="102">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -591,7 +594,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
           <folding>
-            <element signature="e#258#264#0#HTML" expanded="true" />
+            <element signature="e#413#419#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,66 +644,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sharenotifier/forms.py">
+    <entry file="file://$PROJECT_DIR$/Projects/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
+        <state relative-caret-position="221">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sharenotifier/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/sharenotifier/templates/add_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sharenotifier/templates/logout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#258#264#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sharenotifier/templates/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/urls.py">
+    <entry file="file://$PROJECT_DIR$/Projects/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#642#683#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2176">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sharenotifier/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projects/settings.py">
+    <entry file="file://$PROJECT_DIR$/sharenotifier/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="134" column="55" selection-start-line="134" selection-start-column="55" selection-end-line="134" selection-end-column="55" />
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#413#419#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sharenotifier/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="127" selection-start-line="4" selection-start-column="127" selection-end-line="4" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sharenotifier/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sharenotifier/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="223">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projects/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#642#683#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^$', views.index),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^accounts/profile/', views.homepage),
+    #url(r'^logout/', views.logout),
 ]
