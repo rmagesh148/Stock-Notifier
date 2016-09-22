@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>Welcome to the Shares Notifier App</title>
 </head>
+<style>
+    .google-font{
+        color: red;
+    }
+    .fb-font{
+        color: blue;
+        background-color: white;
+    }
+</style>
 <body>
-<h1>Welcome to the share notifier App</h1>
+<h1>Welcome to the Stock Notifier App</h1>
 <br><br><br>
 
-<a href="{{ google_login_page }}">Login using Google account </a>&nbsp;
-<a href="{{ facebook_login_page }}">Login using Facebook account </a>
+<a class="google-font" href="{{ google_login_page }}">Login using Google account </a>&nbsp;
+<a class="fb-font" href="{{ facebook_login_page }}">Login using Facebook account </a>
 
 </body>
 </html>

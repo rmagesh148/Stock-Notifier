@@ -2,10 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Share Notifier App</title>
+    <title>Stock Notifier App</title>
+    <style>
+        a{
+            color: red;
+            font-size: large;
+            font-family: "Monotype Corsiva";
+            position: absolute;
+            right: 300px;
+        }
+        .header-value{
+            color: darkslateblue;
+            font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+        }
+        .input-type{
+            color: darkgrey;
+            font-family:  Moncao, monospace;
+        }
+        .message-text{
+            position: absolute;
+            top: 200px;
+            color: darkred;
+            font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", monospace;
+            font-style: italic;
+        }
+        table{
+            width: 500px;
+            font-family: 'Roboto Mono', 'Consolas', 'Menlo', monospace;
+            top: 200px;
+            position: absolute;
+            color: darkcyan;
+        }
+    </style>
 </head>
-<a href="http://127.0.0.1:8000/accounts/logout">Logout</a>
+<script>
+    function isDelete() {
+        var value= confirm("Are you sure want to logout?");
+        return value;
+
+    }
+</script>
+<a href="/logout" onclick="return isDelete()">Logout</a>
 <body>
-<h1>Welcome to the application {{ email }}</h1>
+<div>
+<h1 class="header-value">Nice having you here, {{ first_name }}!</h1>
+<form class="input-type" action="" method="post">{% csrf_token %}
+ {{ form }}
+    <input class="input-type" type="submit" value="Add">
+</form>
+{% if stock_values %}
+    <table border="1" align="left">
+    <tr>
+    <th>Company Code</th>
+    <th>Target Price</th>
+    </tr>
+    {% for value in stock_values %}
+        <tr>
+        <td>{{ value.company_code }}</td>
+        <td>{{ value.target_price }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endif %}
+<h1 class="message-text">{{ message }}</h1>
+</div>
 </body>
 </html>

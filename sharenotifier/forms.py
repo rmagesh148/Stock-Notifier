@@ -1,6 +1,5 @@
 from django import forms
 
-
-class LoginForm(forms.Form):
-    user_name = forms.EmailField(label='User Name', max_length=50)
-    pass_word = forms.CharField(label='Password', widget=forms.PasswordInput())
+class AddForm(forms.Form):
+    company_code = forms.CharField(label='Company Code',max_length=150, required=True, widget=forms.TextInput(attrs={'placeholder':'Please enter company code'}))
+    target_price = forms.FloatField(label='Target Price',required=True, widget=forms.TextInput(attrs={'placeholder':'123.45'}))
