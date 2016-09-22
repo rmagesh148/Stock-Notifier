@@ -17,36 +17,28 @@ def index(request):
 def homepage(request):
     if request.method == 'GET':
         add_form = AddForm()
-        user = User.objects.get(username=request.user)
-        #print user.id,"udwe id"
-        extract_data = SocialAccount.objects.get(user_id=user.id)
-        email = extract_data.extra_data['email']
+        extract_data = SocialAccount.objects.get(user_id=request.user.id)
         img_src = extract_data.extra_data['picture']
-        first_name = user.first_name
+        first_name = request.user.first_name
         stock_values = sd.objects.all()
-        if stock_values:
-            return render(request,'homepage.html', {'first_name':first_name, 'form': add_form, 'stock_values':stock_values, 'img_src': img_src})
-        else:
-            return render(request, 'homepage.html',
-                          {'first_name': first_name, 'form': add_form, "message": "OOPS! You've no items to show up.", 'img_src': img_src})
+        return render(request,'homepage.html', {'first_name':first_name, 'form': add_form, 'stock_values':stock_values, 'img_src': img_src, "message": "OOPS! You've no items to show up."})
+
     if request.method == "POST":
         form = AddForm(request.POST)
         if form.is_valid():
-            user = User.objects.get(username=request.user)
             company_code = form.cleaned_data['company_code']
             target_price = form.cleaned_data['target_price']
-            extract_data = SocialAccount.objects.get(user_id=user.id)
-            email = extract_data.extra_data['email']
+            extract_data = SocialAccount.objects.get(user_id=request.user.id)
             img_src = extract_data.extra_data['picture']
-            first_name = user.first_name
+            first_name = request.user.first_name
             stock_values = sd.objects.all()
-            if sd.objects.filter(company_code = company_code,user_id = user.id).exists():
+            if sd.objects.filter(company_code = company_code,user_id = request.user.id).exists():
                 return render(request, 'homepage.html',
                               {'first_name': first_name,'form':form, 'stock_values': stock_values,
                                'img_src': img_src, 'info_message_red': 'Same Company code!'})
             else:
                 form = AddForm()
-                sd.objects.create(company_code=company_code,target_price=target_price,user_id=user.id)
+                sd.objects.create(company_code=company_code,target_price=target_price,user_id=request.user.id)
                 return render(request, 'homepage.html',
                               {'first_name': first_name, 'form': form, 'stock_values': stock_values,
                                'img_src': img_src, 'info_message_green': 'Company code and Price added!'})
