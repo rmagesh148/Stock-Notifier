@@ -11,6 +11,14 @@
             position: absolute;
             right: 300px;
         }
+        .img-src{
+            color: red;
+            height: 5%;
+            position: absolute;
+            right: 350px;
+            border-color: blue;
+            border-radius: 50%;
+        }
         .header-value{
             color: darkslateblue;
             font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
@@ -39,9 +47,9 @@
     function isDelete() {
         var value= confirm("Are you sure want to logout?");
         return value;
-
     }
 </script>
+<img class="img-src" src="{{ img_src }}">
 <a href="/logout" onclick="return isDelete()">Logout</a>
 <body>
 <div>
@@ -50,6 +58,12 @@
  {{ form }}
     <input class="input-type" type="submit" value="Add">
 </form>
+{% if info_message_green %}
+    <p style="color: green; font-family: 'Monotype Corsiva'; font-size: 20px;"> {{ info_message_green }}</p>
+{% endif %}
+{% if info_message_red %}
+    <p style="color: red; font-family: 'Monotype Corsiva'; font-size: 20px;"> {{ info_message_red }}</p>
+{% endif %}
 {% if stock_values %}
     <table border="1" align="left">
     <tr>
@@ -63,8 +77,9 @@
         </tr>
     {% endfor %}
     </table>
-{% endif %}
+{% else %}
 <h1 class="message-text">{{ message }}</h1>
+{% endif %}
 </div>
 </body>
 </html>
