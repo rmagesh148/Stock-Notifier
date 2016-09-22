@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^$', views.index),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^accounts/profile/', views.homepage),
+    url(r'^delete/', views.delete),
     #url(r'^logout/', views.logout),
 ]

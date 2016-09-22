@@ -60,20 +60,34 @@
 </form>
 {% if info_message_green %}
     <p style="color: green; font-family: 'Monotype Corsiva'; font-size: 20px;"> {{ info_message_green }}</p>
+    <meta http-equiv="refresh" content="05;url=http://127.0.0.1:8000/accounts/profile/">
 {% endif %}
 {% if info_message_red %}
     <p style="color: red; font-family: 'Monotype Corsiva'; font-size: 20px;"> {{ info_message_red }}</p>
+    <meta http-equiv="refresh" content="05;url=http://127.0.0.1:8000/accounts/profile/">
+{% endif %}
+{% if delete_message %}
+    <p style="color: red; font-family: 'Monotype Corsiva'; font-size: 20px;"> {{ delete_message }}</p>
+    <meta http-equiv="refresh" content="05;url=http://127.0.0.1:8000/accounts/profile/">
 {% endif %}
 {% if stock_values %}
     <table border="1" align="left">
     <tr>
     <th>Company Code</th>
     <th>Target Price</th>
+    <th>Delete</th>
+    <th>Edit</th>
     </tr>
     {% for value in stock_values %}
         <tr>
         <td>{{ value.company_code }}</td>
         <td>{{ value.target_price }}</td>
+            <form action="/delete/" method="get">
+                <td><button class="input-type" type = "submit" name ="delete" value="{{ value.company_code }}">Delete</button></td>
+            </form>
+            <form action="/delete/" method="get">
+                <td><button class="input-type" type = "submit" name =  "delete" value="{{ value.company_code }}">Edit</button></td>
+            </form>
         </tr>
     {% endfor %}
     </table>

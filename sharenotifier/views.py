@@ -21,7 +21,9 @@ def homepage(request):
         img_src = extract_data.extra_data['picture']
         first_name = request.user.first_name
         stock_values = sd.objects.all()
-        return render(request,'homepage.html', {'first_name':first_name, 'form': add_form, 'stock_values':stock_values, 'img_src': img_src, "message": "OOPS! You've no items to show up."})
+        return render(request,'homepage.html',
+                      {'first_name':first_name, 'form': add_form, 'stock_values':stock_values,
+                       'img_src': img_src, "message": "OOPS! You've no items to show up."})
 
     if request.method == "POST":
         form = AddForm(request.POST)
@@ -35,15 +37,36 @@ def homepage(request):
             if sd.objects.filter(company_code = company_code,user_id = request.user.id).exists():
                 return render(request, 'homepage.html',
                               {'first_name': first_name,'form':form, 'stock_values': stock_values,
-                               'img_src': img_src, 'info_message_red': 'Same Company code!'})
-            else:
-                form = AddForm()
-                sd.objects.create(company_code=company_code,target_price=target_price,user_id=request.user.id)
-                return render(request, 'homepage.html',
-                              {'first_name': first_name, 'form': form, 'stock_values': stock_values,
-                               'img_src': img_src, 'info_message_green': 'Company code and Price added!'})
+                               'img_src': img_src, 'info_message_red': 'Same Company code!',
+                               "message": "OOPS! You've no items to show up."})
 
-    return render(request, 'homepage.html')
+            form = AddForm()
+            sd.objects.create(company_code=company_code,target_price=target_price,user_id=request.user.id)
+            return render(request, 'homepage.html',
+                          {'first_name': first_name, 'form': form, 'stock_values': stock_values,
+                           'img_src': img_src, 'info_message_green': 'Company code and Price added!',
+                           "message": "OOPS! You've no items to show up."})
+
+def delete(request):
+    if request.method == "GET":
+        add_form = AddForm()
+        extract_data = SocialAccount.objects.get(user_id=request.user.id)
+        img_src = extract_data.extra_data['picture']
+        first_name = request.user.first_name
+        stock_values = sd.objects.all()
+        delete_stock = sd.objects.filter(company_code=request.GET.get('delete',''),user_id=request.user.id)
+        if delete_stock:
+            delete_stock.delete()
+            return render(request, 'homepage.html',
+                          {'first_name': first_name, 'form': add_form, 'stock_values': stock_values,
+                           'img_src': img_src, "message": "OOPS! You've no items to show up.",
+                           'delete_message':'Deleted!!'})
+        return render(request, 'homepage.html',
+                          {'first_name': first_name, 'form': add_form, 'stock_values': stock_values,
+                           'img_src': img_src, "message": "OOPS! You've no items to show up.",
+                           'delete_message': 'Not Deleted, may be some issue!!'})
+
+
 
 
 # def logout(request):
